@@ -1,0 +1,2 @@
+//GET
+GET https://www.omdbapi.com/?s=guard&apikey=fab9af00

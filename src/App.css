@@ -1,38 +1,202 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+  background: #292929;
+  height: 140px;
+  display: flex;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header img {
+  border: 1px solid #FFFFFF;
+  width: 156.7px;
+  height: 32.94px;
+  padding: 1em;
+  margin-left: 77px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section1 {
+  background-image: url('./images/Rectangle desktop.png');
+  height: 550px;
+  display: flex;
+  align-items: center;
+}
+
+.section1 div {
+  width: 490px;
+  height: 282px;
+  margin-left: 77px;
+}
+
+.section1-header {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 94px;
+  letter-spacing: -0.05em;
+  color: #FFFFFF;
+}
+
+.search {
   display: flex;
   flex-direction: column;
+  width: 90vw;
+  padding: 2.5em 0 1em 2em;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+.search input {
+  display: block;
+  width: 100%;
+  height: 54px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.search-results {
+  margin: 2em 1em 2em 3em;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.search-item.MuiPaper-root {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  margin-right: 1em;
+  overflow: hidden;
+  overflow-x: auto;
+  scrollbar-width: none;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  color: #FFFFFF;
 }
 
-.App-link {
-  color: #61dafb;
+.search1 {
+  overflow: hidden;
+  scrollbar-width: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+h3 {
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+
+@media (max-width: 768px) {
+  .header {
+    justify-content: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .header img {
+    margin: 0;
+  }
+
+  .section1 {
+    background-image: url('./images/Rectangle tab.png');
+    justify-content: center;
+  }
+
+  .section1 div {
+    margin-left: 0;
+  }
+
+  .section1-header {
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 94px;
+    text-align: center;
+    letter-spacing: -0.05em;  
+  }
+
+  .search input {
+    width: 680px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .search {
+    padding-left: 1.5em;
+  }
+
+  .search-results {
+    margin-left: 2em;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    height: 67px;
+  }
+
+  .header img {
+    width: 87.68px;
+    height: 18.43px;
+    padding: .5em;
+  }
+
+  .section1 {
+    background-image: url('./images/Rectangle phone.png');
+    height: 257px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1 div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section1-header {
+    font-size: 28px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    width: 273px;
+  }
+
+  .search input {
+    width: 265px;
+    height: 34px;
+  }
+
+  .search {
+    font-size: 16px;
+    line-height: 21px;
+    padding-left: 2em;
+  }
+
+  h3 {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .search-item.MuiPaper-root {
+    width: 200px;
+    height: 200px;
   }
 }
