@@ -1,12 +1,11 @@
-import React from 'react';
-import logo from '../images/MyTestApp.png';
+import logo from "../images/MyTestApp.png";
 
 const Header = () => {
   return (
     <div className="header">
-        <img src={logo} alt="logo" width='100%'/>
+      <img src={logo} alt="logo" width="100%" />
     </div>
-  )
-}
+  );
+};
 
 export default Header;
