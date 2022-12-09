@@ -7,7 +7,7 @@ const SearchResults = ({ movies, series, isLoading }) => {
     <div className="search-results">
       {series ? <h3>Series</h3> : <h3>Movies</h3>}
       {isLoading ? (
-        <Box>
+        <Box sx={{ overflow: "none" }}>
           <CircularProgress />
         </Box>
       ) : movies?.length > 0 ? (
