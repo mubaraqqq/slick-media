@@ -80,6 +80,7 @@ body {
   margin: 2em 1em 2em 3em;
   overflow-x: auto;
   scrollbar-width: none;
+  min-height: 50px;
 }
 
 .search-item.MuiPaper-root {

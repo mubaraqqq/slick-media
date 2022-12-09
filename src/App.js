@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { CircularProgress, Box } from "@mui/material";
 
 import "./App.css";
 
@@ -32,8 +33,16 @@ function App() {
       <Header />
       <Section1 />
       <Search search={search} setSearch={setSearch} />
-      <SearchResults movies={moviesMovies} isLoading={isLoading} />
-      <SearchResults movies={moviesSeries} isLoading={isLoading} series />
+      {isLoading ? (
+        <Box m="50px" height="40px" sx={{ overflow: "none" }}>
+          <CircularProgress />
+        </Box>
+      ) : (
+        <>
+          <SearchResults movies={moviesMovies} />
+          <SearchResults movies={moviesSeries} series />
+        </>
+      )}
     </div>
   );
 }
